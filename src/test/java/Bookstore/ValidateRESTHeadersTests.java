@@ -1,13 +1,15 @@
+package Bookstore;
+
 import io.restassured.RestAssured;
 import io.restassured.http.Header;
 import io.restassured.http.Headers;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-
-import org.testng.Assert.*;   //used to validate response status
 import org.testng.annotations.Test;
 
 import static org.testng.AssertJUnit.assertEquals;
+
+// https://demoqa.com/swagger/
 
 
 public class ValidateRESTHeadersTests {
@@ -66,6 +68,9 @@ public class ValidateRESTHeadersTests {
 
         assertEquals(serverType /* actual value */, "nginx/1.17.10 (Ubuntu)" /* expected value */);
         assertEquals(contentEncoding, null);
+
+
+
     }
 }
 
