@@ -22,7 +22,7 @@ public class BookstoreAPITests {
     // Swagger: https://bookstore.demoqa.com/
     private static final String BASE_URL = "https://bookstore.demoqa.com";
 
-    @Test
+    @Test(priority=1)
     public void GetAllBooksDetails() {
         // Specify the base URL to the RESTful web service
         RestAssured.baseURI = "https://demoqa.com/BookStore/v1/Books";
@@ -45,7 +45,7 @@ public class BookstoreAPITests {
 
     }
 
-    @Test
+    @Test(priority=2)
     public void testGetBookByISBN() {
         // Указание ISBN книги
         String isbn = "9781449325862";
